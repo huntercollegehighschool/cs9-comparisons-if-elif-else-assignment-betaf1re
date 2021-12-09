@@ -23,3 +23,12 @@ not a month
 '''
 
 #start writing your code below
+months = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]
+days = [31, "28 or 29", 31, 30, 31, 30, 31, 30, 31, 31, 30, 31]
+
+try:
+  print(days[months.index(input("\nEnter a month: ").lower())])
+except ValueError:
+  print("not a month")
+
+#only 1 or 2 codeblocks lets go
